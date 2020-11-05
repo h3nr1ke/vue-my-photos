@@ -109,6 +109,7 @@
             },
             hide() {
                 this.visible = false;
+                this.$emit('close', this.index)
                 this.index = 0;
                 clearTimeout(this.timer);
             },
